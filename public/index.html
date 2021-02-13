@@ -1,0 +1,23 @@
+<!DOCTYPE html><html><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><meta name="note" content="environment=development"/><title data-react-helmet="true"></title><script src="/socket.io/socket.io.js"></script></head><body><div id="___gatsby"></div><script src="/commons.js"></script><script defer="">
+                function appendScript(url) {
+                    var element = document.createElement("script");
+                    element.src = url;
+                    document.body.appendChild(element);
+                }
+
+                function downloadWhatIsNeeded() {
+                    appendScript("https://unpkg.com/website-carbon-badges@^1/b.min.js")
+                    // if ('serviceWorker' in navigator) {
+                    //   navigator.serviceWorker.register('/sw.js');
+                    // }
+                }
+
+                if (window.addEventListener) {
+                  window.addEventListener("load", downloadWhatIsNeeded, false);
+                }
+                else if (window.attachEvent)
+                    window.attachEvent("onload", downloadWhatIsNeeded);
+                else window.onload = downloadWhatIsNeeded;
+            </script><script src="quicklink.js" defer=""></script><script>
+            window.addEventListener('load', () => quicklink.listen());
+          </script></body></html>

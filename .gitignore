@@ -1,0 +1,6 @@
+.cache
+.vscode
+contentful-import*
+static/
+node_modules
+.env
